@@ -17,6 +17,7 @@
     ]
   },
   "scripts": {
-      "build": "node_modules/.bin/webpack -w"
+    "build": "node_modules/.bin/webpack -w",
+    "wds": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js"
   }
 }
