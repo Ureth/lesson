@@ -9780,7 +9780,7 @@ class Content extends React.Component {
     console.log(ReactDOM.findDOMNode(comments).value);
   }
   render() {
-    this.prompt = 'Please enter your email to win a Sublime Text license';
+    this.prompt = 'Please enter your email';
     return React.createElement(
       'div',
       { className: 'well' },
