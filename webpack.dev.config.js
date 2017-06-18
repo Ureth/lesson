@@ -1,5 +1,3 @@
-const webpack = require('webpack')
-
 module.exports = {
   entry: [
     'webpack-dev-server/client/?http://localhost:8080',
@@ -13,14 +11,12 @@ module.exports = {
   devtool: '#sourcemap',
   module: {
     loaders: [
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
-        loaders: ['babel-loader']
+        loaders: ['react-hot-loader', 'babel-loader']
       }
     ]
-  }
+  },
 }

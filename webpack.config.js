@@ -5,10 +5,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   devtool: '#sourcemap',
-  stats: {
-   colors: true,
-   reasons: true
-  },
   module: {
     loaders: [
       {
@@ -16,6 +12,7 @@ module.exports = {
         loader: 'style-loader!css-loader' },
       {
         test: /\.jsx?$/,
+        exclude: /(node_modules)/,
         loaders: ['babel-loader']
       }
     ]
