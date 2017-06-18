@@ -13,7 +13,7 @@ class Content extends React.Component {
     console.log(ReactDOM.findDOMNode(comments).value)
   }
   render() {
-    this.prompt = 'Please enter your email sd'
+    this.prompt = 'Please enter your email'
     return (
       <div className="well">
         <p>{this.prompt}</p>
